@@ -1,12 +1,15 @@
-import * as React from "react";
+import React from "react";
+import Header from "../components/header";
+import AboutMe from "../components/aboutMe";
 
-const IndexPage: React.FunctionComponent = () => {
+const HomePage: React.FunctionComponent = () => {
   return (
-    <main>
+    <main className="main">
       <title>Home Page</title>
-      <h1>Hello</h1>
+      <Header />
+      <AboutMe />
     </main>
   );
 };
 
-export default IndexPage;
+export default HomePage;
