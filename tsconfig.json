@@ -10,7 +10,10 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "noUnusedLocals": false,
-    "allowJs": true
+    "allowJs": true,
+    "jsxImportSource": "@emotion/react",
+    "types": ["@emotion/react/types/css-prop"]
   },
+  "files": ["./types/css.d.ts"],
   "exclude": ["node_modules", "public", ".cache"]
 }

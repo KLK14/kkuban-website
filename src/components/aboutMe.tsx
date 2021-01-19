@@ -1,4 +1,7 @@
+/** @jsx jsx */
+import { jsx } from "@emotion/react";
 import React from "react";
+import * as styles from "../styles/aboutMe";
 import { useStaticQuery, graphql } from "gatsby";
 import Img, { FluidObject, GatsbyImageFluidProps } from "gatsby-image";
 
@@ -8,11 +11,11 @@ const AboutMe: React.FunctionComponent = () => {
   }>(query);
 
   return (
-    <div className="about">
-      <div className="about-image">
+    <div css={styles.about}>
+      <div css={styles.aboutImage}>
         <Img fluid={file.childImageSharp.fluid} alt="Me" />
       </div>
-      <div className="about-text">
+      <div css={styles.aboutText}>
         <h1>About Me</h1>
         <p>I am ....</p>
       </div>
@@ -22,7 +25,7 @@ const AboutMe: React.FunctionComponent = () => {
 
 export const query = graphql`
   query ImageQuery {
-    file(relativePath: { eq: "profilTest.jpg" }) {
+    file(relativePath: { eq: "profil.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid

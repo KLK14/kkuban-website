@@ -4,7 +4,7 @@ import AboutMe from "../components/aboutMe";
 
 const HomePage: React.FunctionComponent = () => {
   return (
-    <main className="main">
+    <main>
       <title>Home Page</title>
       <Header />
       <AboutMe />

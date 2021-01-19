@@ -6,22 +6,7 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-plugin-typescript",
-    // "gatsby-plugin-ts",
-    // {
-    //   resolve: `gatsby-plugin-ts`,
-    //   options: {
-    //     tsLoader: {
-    //       logLevel: "warn",
-    //     },
-    //     forkTsCheckerPlugin: {
-    //       eslint: true,
-    //     },
-    //     fileName: `types/graphql-types.ts`,
-    //     codegen: true,
-    //     codegenDelay: 250,
-    //     alwaysCheck: false,
-    //   },
-    // },
+    "gatsby-plugin-emotion",
     {
       resolve: "gatsby-source-filesystem",
       options: {
