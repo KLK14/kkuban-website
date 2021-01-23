@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/header";
 import AboutMe from "../components/aboutMe";
+import Projects from "../components/projects";
 
 const HomePage: React.FunctionComponent = () => {
   return (
@@ -8,6 +9,7 @@ const HomePage: React.FunctionComponent = () => {
       <title>Home Page</title>
       <Header />
       <AboutMe />
+      <Projects />
     </main>
   );
 };

@@ -12,7 +12,8 @@
     "noUnusedLocals": false,
     "allowJs": true,
     "jsxImportSource": "@emotion/react",
-    "types": ["@emotion/react/types/css-prop"]
+    "types": ["@emotion/react/types/css-prop"],
+    "typeRoots": ["./types/global.d.ts"]
   },
   "files": ["./types/css.d.ts"],
   "exclude": ["node_modules", "public", ".cache"]
