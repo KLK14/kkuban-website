@@ -8,7 +8,7 @@ import * as styles from "../styles/aboutMe";
 import { FlexContainer } from "./../styles/global";
 
 const AboutMe: React.FunctionComponent = () => {
-  const { imageMe, backPath, text } = useStaticQuery(query);
+  const { imageMe, text } = useStaticQuery(query);
 
   return (
     <div css={styles.container}>
@@ -34,9 +34,6 @@ const query = graphql`
           ...GatsbyImageSharpFluid
         }
       }
-    }
-    backPath: file(relativePath: { eq: "wave.svg" }) {
-      publicURL
     }
     text: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/aboutMe/" } }

@@ -2,12 +2,13 @@
 import { jsx } from "@emotion/react";
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
+import Img from "gatsby-image";
 import ImageSlider from "./slider";
 import { FlexContainer } from "./../styles/global";
 import * as styles from "../styles/projects";
 
 const Projects: React.FunctionComponent = () => {
-  const { texts } = useStaticQuery(query);
+  const { texts, workImage } = useStaticQuery(query);
 
   return (
     <FlexContainer css={styles.container}>
@@ -15,7 +16,7 @@ const Projects: React.FunctionComponent = () => {
         css={styles.text}
         dangerouslySetInnerHTML={{ __html: texts.edges[0].node.html }}
       />
-      <div>Placeholder Image Work</div>
+      <Img fluid={workImage.childImageSharp.fluid} alt="Work" />
       <div
         css={styles.text}
         dangerouslySetInnerHTML={{ __html: texts.edges[1].node.html }}
@@ -33,6 +34,13 @@ export const query = graphql`
       edges {
         node {
           html
+        }
+      }
+    }
+    workImage: file(relativePath: { eq: "work2.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
         }
       }
     }

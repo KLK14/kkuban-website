@@ -4,8 +4,7 @@ import { colors, textColors } from "./global";
 
 export const container = css`
   position: relative;
-  margin-bottom: 20vh;
-  padding: 0;
+  margin-bottom: 15vh;
   width: 100%;
   background-image: linear-gradient(to top, #e1415f, ${colors.contrastColor});
 
@@ -22,7 +21,6 @@ export const container = css`
 export const aboutText = css`
   color: ${textColors.textColor};
   margin-bottom: 20vh;
-  /* text-align: center; */
 
   @media (min-width: 1200px) {
     margin-top: 7vh;
@@ -30,19 +28,23 @@ export const aboutText = css`
   }
   @media (max-width: 600px) {
     padding: 0 8vw;
+    margin-bottom: 10vh;
   }
 
   p {
     font-size: larger;
   }
+  a {
+    color: #f9f1f1;
+  }
 `;
 
 export const aboutImage = css`
   width: 25%;
+  height: 25%;
   margin: 3rem;
-  border: 0.2rem solid #ffffff;
-  border-radius: 48% 52% 51% 49% / 31% 43% 57% 69%;
   border-radius: 50%;
+  border: 0.2rem solid #ffffff;
 
   @media (min-width: 1200px) {
     margin-left: 4vw;
@@ -50,7 +52,6 @@ export const aboutImage = css`
   }
 
   Img {
-    border-radius: 48% 52% 51% 49% / 31% 43% 57% 69%;
     border-radius: 50%;
   }
 `;

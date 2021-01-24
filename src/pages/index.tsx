@@ -4,16 +4,18 @@ import React from "react";
 import Header from "../components/header";
 import AboutMe from "../components/aboutMe";
 import Projects from "../components/projects";
+import Footer from "../components/footer";
 import { main } from "../styles/global";
 
 const HomePage: React.FunctionComponent = () => {
   return (
-    <main css={main}>
+    <div css={main}>
       <title>Home Page</title>
       <Header />
       <AboutMe />
       <Projects />
-    </main>
+      <Footer />
+    </div>
   );
 };
 
