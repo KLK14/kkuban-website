@@ -1,19 +1,7 @@
 import { css } from "@emotion/react";
 import { colors } from "./global";
 
-export const background = css`
-  position: absolute;
-  top: 0;
-  width: 100%;
-`;
-
 export const container = css`
-  position: absolute;
-  margin-top: 10vh;
-  height: 15rem;
-  min-height: 25vw;
-  width: 100%;
-
   background-image: linear-gradient(
     to bottom,
     #e1415f,
@@ -29,15 +17,16 @@ export const container = css`
   }
 `;
 
-export const flexContainer = css`
-  position: absolute;
+export const footerItems = css`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  bottom: 0;
-  width: 100%;
+  margin: -5vh;
   color: ${colors.backgroundColor};
+
+  @media (min-width: 1500px) {
+    margin: -20vh;
+  }
 `;
 
 export const icon = css`

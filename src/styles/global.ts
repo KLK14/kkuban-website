@@ -12,6 +12,7 @@ export const textColors = {
 };
 
 export const main = css`
+  height: 100vh;
   font-family: "Comic Sans MS";
   /* background-color: #f9f9f9; */
 `;

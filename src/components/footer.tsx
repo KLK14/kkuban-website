@@ -14,8 +14,8 @@ import { ImMail4 } from "react-icons/im";
 const Footer: React.FunctionComponent = () => {
   return (
     <div css={styles.container}>
-      <Wave css={styles.background}></Wave>
-      <div css={styles.flexContainer}>
+      <Wave></Wave>
+      <div css={styles.footerItems}>
         <h2 css={styles.text}>Get in touch</h2>
         <div>
           <a href={"mailto:katharina.kuban@web.de"}>
