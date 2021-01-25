@@ -4,7 +4,7 @@ import { colors, textColors } from "./global";
 
 export const container = css`
   position: relative;
-  margin-bottom: 15vh;
+  margin-bottom: 5vh;
   width: 100%;
   background-image: linear-gradient(to top, #e1415f, ${colors.contrastColor});
 
@@ -23,7 +23,7 @@ export const aboutText = css`
   margin-bottom: 20vh;
 
   @media (min-width: 1200px) {
-    margin-top: 7vh;
+    margin-top: 5vh;
     margin-right: 6vw;
   }
   @media (max-width: 600px) {

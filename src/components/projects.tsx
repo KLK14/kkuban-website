@@ -11,18 +11,28 @@ const Projects: React.FunctionComponent = () => {
   const { texts, workImage } = useStaticQuery(query);
 
   return (
-    <FlexContainer css={styles.container}>
-      <div
-        css={styles.text}
-        dangerouslySetInnerHTML={{ __html: texts.edges[0].node.html }}
-      />
-      <Img fluid={workImage.childImageSharp.fluid} alt="Work" />
-      <div
-        css={styles.text}
-        dangerouslySetInnerHTML={{ __html: texts.edges[1].node.html }}
-      />
-      <ImageSlider />
-    </FlexContainer>
+    <div>
+      <FlexContainer css={styles.flexContainer}>
+        <div
+          css={styles.text}
+          dangerouslySetInnerHTML={{ __html: texts.edges[1].node.html }}
+        />
+        <div>
+          <Img
+            css={styles.image}
+            fluid={workImage.childImageSharp.fluid}
+            alt="Work"
+          />
+        </div>
+      </FlexContainer>
+      <FlexContainer css={styles.flexContainer}>
+        <div
+          css={styles.text}
+          dangerouslySetInnerHTML={{ __html: texts.edges[0].node.html }}
+        />
+        <ImageSlider />
+      </FlexContainer>
+    </div>
   );
 };
 

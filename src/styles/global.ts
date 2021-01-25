@@ -14,7 +14,19 @@ export const textColors = {
 export const main = css`
   height: 100vh;
   font-family: "Comic Sans MS";
-  /* background-color: #f9f9f9; */
+  line-height: 2rem;
+  @media (min-width: 1200px) {
+    p {
+      font-size: 1.5rem;
+      line-height: 2.2rem;
+    }
+    h1 {
+      font-size: 3.5rem;
+    }
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
 `;
 
 export const FlexContainer = styled.div`

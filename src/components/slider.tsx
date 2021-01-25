@@ -1,9 +1,8 @@
 /** @jsx jsx */
-import { jsx } from "@emotion/react";
+import { jsx, SerializedStyles } from "@emotion/react";
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import Img, { GatsbyImageFluidProps } from "gatsby-image";
-import { FlexContainer } from "./../styles/global";
 import * as styles from "./../styles/slider";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -21,6 +20,7 @@ const ImageSlider: React.FunctionComponent = () => {
 
   const settings = {
     dots: true,
+    arrows: false,
     infinite: true,
     autoplay: true,
     speed: 500,
@@ -30,7 +30,11 @@ const ImageSlider: React.FunctionComponent = () => {
     <div css={styles.imageContainer}>
       <Slider {...settings}>
         {gamePics.nodes.map((pic, index) => (
-          <Img fluid={pic.childImageSharp.fluid} key={index.toString()} />
+          <Img
+            css={styles.image}
+            fluid={pic.childImageSharp.fluid}
+            key={index.toString()}
+          />
         ))}
       </Slider>
     </div>

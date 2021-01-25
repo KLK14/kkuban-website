@@ -21,12 +21,8 @@ export const footerItems = css`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: -5vh;
+  margin: -10vw 0;
   color: ${colors.backgroundColor};
-
-  @media (min-width: 1500px) {
-    margin: -20vh;
-  }
 `;
 
 export const icon = css`
@@ -43,7 +39,6 @@ export const icon = css`
 `;
 
 export const text = css`
-  align-self: stretch;
   text-align: center;
 `;
 
