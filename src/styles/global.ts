@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { css } from "@emotion/react";
+import emotionNormalize from "emotion-normalize";
 
 export const colors = {
   backgroundColor: "white",
@@ -12,9 +13,9 @@ export const textColors = {
 };
 
 export const main = css`
-  height: 100vh;
-  font-family: "Comic Sans MS";
-  line-height: 2rem;
+  p {
+    line-height: 2rem;
+  }
   @media (min-width: 1200px) {
     p {
       font-size: 1.5rem;
@@ -22,10 +23,22 @@ export const main = css`
     }
     h1 {
       font-size: 3.5rem;
+      line-height: 4rem;
     }
     h2 {
       font-size: 2.5rem;
     }
+  }
+`;
+
+export const global = css`
+  ${emotionNormalize}
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    /* min-height: 100%; */
+    font-family: "Comic Sans MS";
   }
 `;
 

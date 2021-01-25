@@ -10,10 +10,6 @@ export const header = css`
   margin-left: 2%;
 `;
 
-export const headerTitle = css`
-  font-size: 4vh;
-`;
-
 export const textIcon = css`
   margin: 0 1.5rem;
 `;

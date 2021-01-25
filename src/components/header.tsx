@@ -8,7 +8,7 @@ import { text } from "../styles/footer";
 const Header: React.FunctionComponent = () => {
   return (
     <header css={styles.header}>
-      <h1 css={styles.headerTitle}>
+      <h1>
         <span>Hi, I'm a web developer with a</span>
         <FaHeart css={styles.textIcon} />
         <span>for game development</span>
