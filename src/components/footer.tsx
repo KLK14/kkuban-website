@@ -14,7 +14,7 @@ import { ImMail4 } from "react-icons/im";
 const Footer: React.FunctionComponent = () => {
   return (
     <div css={styles.container}>
-      <Wave></Wave>
+      <Wave css={styles.background} />
       <div css={styles.footerItems}>
         <h2 css={styles.text}>Get in touch</h2>
         <div>

@@ -7,7 +7,7 @@ export const header = css`
   align-items: center;
   color: ${colors.contrastColor};
   height: 100vh;
-  margin-left: 2%;
+  margin: 0 4%;
 `;
 
 export const textIcon = css`

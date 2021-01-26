@@ -15,7 +15,7 @@ const Projects: React.FunctionComponent = () => {
       <FlexContainer css={styles.flexContainer}>
         <div
           css={styles.text}
-          dangerouslySetInnerHTML={{ __html: texts.edges[1].node.html }}
+          dangerouslySetInnerHTML={{ __html: texts.edges[0].node.html }}
         />
         <div>
           <Img
@@ -28,7 +28,7 @@ const Projects: React.FunctionComponent = () => {
       <FlexContainer css={styles.flexContainer}>
         <div
           css={styles.text}
-          dangerouslySetInnerHTML={{ __html: texts.edges[0].node.html }}
+          dangerouslySetInnerHTML={{ __html: texts.edges[1].node.html }}
         />
         <ImageSlider />
       </FlexContainer>

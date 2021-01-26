@@ -5,20 +5,17 @@ import Header from "../components/header";
 import AboutMe from "../components/aboutMe";
 import Projects from "../components/projects";
 import Footer from "../components/footer";
-import { main, global } from "../styles/global";
+import { main } from "../styles/global";
 
 const HomePage: React.FunctionComponent = () => {
   return (
-    <React.Fragment>
-      <Global styles={global} />
-      <div css={main}>
-        <title>Home Page</title>
-        <Header />
-        <AboutMe />
-        <Projects />
-        <Footer />
-      </div>
-    </React.Fragment>
+    <div css={main}>
+      <title>KKuban</title>
+      <Header />
+      <AboutMe />
+      <Projects />
+      <Footer />
+    </div>
   );
 };
 

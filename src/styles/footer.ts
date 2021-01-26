@@ -17,6 +17,10 @@ export const container = css`
   }
 `;
 
+export const background = css`
+  margin-top: -1px;
+`;
+
 export const footerItems = css`
   display: flex;
   flex-direction: column;

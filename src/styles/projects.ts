@@ -28,13 +28,8 @@ export const flexContainer = css`
   border-radius: 30px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 20px;
-  margin-bottom: 5vh;
+  margin: 0 2% 5vh 2%;
   align-items: center;
-
-  @media (min-width: 1200px) {
-    margin-left: 2%;
-    margin-right: 2%;
-  }
 
   & > * {
     min-width: 45%;
