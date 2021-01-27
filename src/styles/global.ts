@@ -15,10 +15,10 @@ export const main = css`
   p {
     line-height: 2rem;
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 1400px) {
     p {
-      font-size: 1.5rem;
-      line-height: 2.2rem;
+      font-size: 1.2rem;
+      line-height: 2.1rem;
     }
     h1 {
       font-size: 3.5rem;
@@ -26,6 +26,12 @@ export const main = css`
     }
     h2 {
       font-size: 2.5rem;
+    }
+  }
+  @media (min-width: 2000px) {
+    p {
+      font-size: 1.4rem;
+      line-height: 2.2rem;
     }
   }
 `;

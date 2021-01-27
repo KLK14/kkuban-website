@@ -26,9 +26,6 @@ export const aboutText = css`
     padding: 0 8vw;
   }
 
-  p {
-    font-size: larger;
-  }
   a {
     color: #f9f1f1;
   }

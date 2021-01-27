@@ -23,6 +23,8 @@ const ImageSlider: React.FunctionComponent = () => {
     arrows: false,
     infinite: true,
     autoplay: true,
+    fade: true,
+    pauseOnDotsHover: true,
     speed: 500,
   };
 
