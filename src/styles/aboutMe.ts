@@ -53,7 +53,7 @@ export const background = css`
   width: 100%;
   margin-bottom: -5px;
 
-  @media (min-height: 1100px) {
+  @media (min-width: 1100px) {
     margin-top: -10%;
   }
 `;

@@ -6,6 +6,7 @@ export const header = css`
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-weight: 1400;
   color: ${colors.contrastColor};
   height: 100vh;
   margin: 0 4%;

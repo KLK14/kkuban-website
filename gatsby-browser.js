@@ -7,13 +7,13 @@ export const wrapPageElement = ({ element }) => {
     <div>
       <Global
         styles={css`
-          @import url("https://fonts.googleapis.com/css?family=ComicSansMs");
+          @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap");
           ${emotionNormalize}
           html,
         body {
             padding: 0;
             margin: 0;
-            font-family: "Comic Sans Ms";
+            font-family: "Nunito";
           }
         `}
       />
