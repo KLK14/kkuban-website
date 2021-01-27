@@ -40,9 +40,13 @@ export const query = graphql`
   query {
     texts: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/projects/" } }
+      sort: { fields: id, order: ASC }
     ) {
       edges {
         node {
+          frontmatter {
+            id
+          }
           html
         }
       }
