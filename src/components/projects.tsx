@@ -13,23 +13,13 @@ const Projects: React.FunctionComponent = () => {
   return (
     <div>
       <FlexContainer css={styles.flexContainer}>
-        <div
-          css={styles.text}
-          dangerouslySetInnerHTML={{ __html: texts.edges[0].node.html }}
-        />
+        <div css={styles.text} dangerouslySetInnerHTML={{ __html: texts.edges[0].node.html }} />
         <div>
-          <Img
-            css={styles.image}
-            fluid={workImage.childImageSharp.fluid}
-            alt="Work"
-          />
+          <Img css={styles.image} fluid={workImage.childImageSharp.fluid} alt="Work" />
         </div>
       </FlexContainer>
       <FlexContainer css={styles.flexContainer}>
-        <div
-          css={styles.text}
-          dangerouslySetInnerHTML={{ __html: texts.edges[1].node.html }}
-        />
+        <div css={styles.text} dangerouslySetInnerHTML={{ __html: texts.edges[1].node.html }} />
         <ImageSlider />
       </FlexContainer>
     </div>
@@ -40,7 +30,7 @@ export const query = graphql`
   query {
     texts: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/projects/" } }
-      sort: { fields: id, order: ASC }
+      sort: { fields: [frontmatter___id], order: ASC }
     ) {
       edges {
         node {
