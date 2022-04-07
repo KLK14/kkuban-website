@@ -8,7 +8,7 @@ title: "AboutMe"
 
 My name is **Katharina Kuban**.
 
-I currently live in Darmstadt, Germany.
+I currently live in Frankfurt, Germany.
 
 I'm a passionate full-stack web developer focusing on user-centered and responsive design.
 
